@@ -1,10 +1,72 @@
 <!doctype html>
 <html>
-  <head></head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf8">
+    <style type="text/css">
+      html {
+        margin: 0;
+        background-color: #386;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      #tools {
+        height: 10vh;
+      }
+
+      #pads {
+        height: 80vh;
+        background: #faa;
+        
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row {
+        background-color: #abc;
+        width: 100%;
+
+        flex-grow: 1;
+        display: flex;
+      }
+
+      .button {
+        flex-grow: 1;
+        flex-basis: 0;
+        border: 0;
+        border-radius: 0;
+        font-size: 24px;
+        text-align: left;
+        padding: 0;
+        border: 1px solid #000;
+        background-color: #222;
+        color: #eee;
+        box-sizing: border-box;
+      }
+
+      .button:active {
+        background-color: #000;
+      }
+
+      .white {
+        background-color: #fff;
+        color: #222;
+      }
+
+      button {
+        border: 0;
+        border-radius: 0;
+      }
+
+    </style>
+  </head>
   <body>
     <div id="tools"></div>
     <div id="pads"></div>
-    <script src="Pizzacato.min.js"></script>
+    <script src="Pizzicato.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
